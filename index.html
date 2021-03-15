@@ -17,9 +17,9 @@
 
 <body>
 
-  <head>
-    <div class="headCanvas">
-      <div class="img" id="headLogo"><img src="images/logo.svg" alt="Logo"></div>
+  <header>
+    <div class="headerCanvas">
+      <div class="img" id="headerLogo"><img src="images/logo.svg" alt="Logo"></div>
       <nav>
         <ul>
           <li><a href="#">Features</a></li>
@@ -28,7 +28,7 @@
         </ul>
       </nav>
     </div>
-  </head>
+  </header>
 
   <main>
     <section id="intro">
@@ -40,7 +40,8 @@
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.</p>
           <form action="#" method="GET">
-            <input type="email" id="introEmail" required name="userEmail">
+            <input type="email" id="introEmail" required name="userEmail" placeholder="Enter your email">
+            <p class="emailAlert">Please check your email</p>
             <button type="button">Get Started</button>
           </form>
         </div>
@@ -57,7 +58,7 @@
 
             Securely share files and folders with friends, family and colleagues for
             live collaboration. No email attachments required!</p>
-          <p><a href="#">See how Fylo works</a></p>
+          <p><a href="#">See how Fylo works&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
           <div class="testiContainer">
             <div class="containerCanvas">
               <p>Fylo has improved our team productivity by an order of magnitude. Since
@@ -84,7 +85,8 @@
         </div>
         <div class="accessForm">
           <form action="#" method="GET">
-            <input type="email" id="accessEmail" required name="userEmail">
+            <input type="email" id="accessEmail" required name="userEmail" placeholder="email@example.com">
+            <p class="emailAlert">Please check your email</p>
             <button type="button">Get Started For Free</button>
           </form>
         </div>
@@ -99,11 +101,11 @@
       </div>
       <div class="footerBottom">
         <address>
-          <div class="adressItem">
+          <div class="addressItem">
             <div class="itemIcon" id="iconPhone"></div>
-            <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+            <p>Phone: <a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
           </div>
-          <div class="adressItem">
+          <div class="addressItem">
             <div class="itemIcon" id="iconEMail"></div>
             <a href="mailto:example@fylo.com">example@fylo.com</a>
           </div>
@@ -122,23 +124,27 @@
         </div>
 
         <div class="social">
-          <div class="socialCircle">
-            <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com">
+            <div class="socialCircle">
               <span class="socialIcon" id="iconFb"></span>
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div class="socialCircle">
-            <a href="https://www.twitter.com">
+
+          <a href="https://www.twitter.com">
+            <div class="socialCircle">
               <span class="socialIcon" id="iconTwitter"></span>
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div class="socialCircle">
-            <a href="https://www.instagram.com">
+
+
+          <a href="https://www.instagram.com">
+            <div class="socialCircle">
               <span class="socialIcon" id="iconInsta"></span>
-            </a>
-          </div>
+            </div>
+          </a>
+
 
         </div>
 
