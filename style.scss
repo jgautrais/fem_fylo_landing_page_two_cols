@@ -158,7 +158,7 @@ img {
 
 button {
   width: 90%;
-  padding: 0.8rem 0;
+  padding: 0.8em 0;
   box-sizing: border-box;
   background: hsl(224, 93%, 58%);
   border: none;
@@ -207,7 +207,7 @@ header, section, footer {
 }
 
 #headerLogo {
-  width: 83px;
+  width: 5.2em;
 }
 
 .headerCanvas nav {
@@ -288,8 +288,12 @@ header, section, footer {
   margin-top: 1.5rem;
 }
 
-#intro .sectionCanvas .introText form input {
+#intro .sectionCanvas .introText .emailform {
   width: 90%;
+}
+
+#intro .sectionCanvas .introText form input {
+  width: 100%;
   padding: 0.8rem 0 0.8rem 1.5rem;
   box-sizing: border-box;
   border-radius: 0.3rem;
@@ -646,10 +650,151 @@ footer a:active {
 
 
     header, main, footer {
-        min-width: 768px;
+        width: 80%;
       }
 
       .headCanvas, .sectionCanvas {
         width: 95%;
       }
+
+      #headerLogo {
+        width: 10.4rem;
+      }
+
+      .headerCanvas nav {
+        width: 18rem;
+      }
+
+      .headerCanvas nav ul {
+        font-size: 1rem;
+      }
+
+      .sectionCanvas {
+        flex-flow: row;
+      }
+
+      .introText {
+        order: -1;
+        width: 50%;
+        align-items: flex-start;
+      }
+
+      #introIllustration {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #introIllustration img {
+        max-width: 30rem;
+      }
+
+      .introText h1 {
+        font-size: 1.8rem;
+      }
+
+      .introText h1, .introText p {
+        text-align: left;
+      }
+
+      #intro .sectionCanvas .introText form {
+        flex-flow: row;
+        align-items: flex-start;
+      }
+
+      #intro .sectionCanvas .introText .emailform {
+        margin-right: 1rem;;
+      }
+
+      #intro .sectionCanvas .introText form .emailAlert {
+        padding-left: 1.5rem;
+      }
+
+      #productiveIllustration {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #productiveIllustration img {
+        max-width: 30rem;
+      }
+
+      .productiveText {
+        order: -1;
+        width: 50%;
+      }
+
+      .productiveText h2 {
+        text-align: left;
+        font-size: 1.8rem;
+      }
+
+      .productiveText>p:last-of-type {
+        text-align: left;
+      }
+
+      .testiContainer {
+        align-self: flex-start;
+        margin-left: 5%;
+        max-width: 20rem;
+      }
+
+      #access .sectionCanvas {
+        margin-top: 3rem;
+      }
+
+      .accessText h3, .accessText>p {
+        text-align: left;
+      }
+
+      .accessText h3 {
+        margin-top: 0;
+        width: 80%;
+      }
+
+      #access .sectionCanvas .accessForm form {
+        align-items: flex-start;
+      }
+
+      .accessForm button {
+        width: 14rem;
+      }
+
+      .footerBottom {
+        flex-flow: row;
+        justify-content: space-between;
+      }
+
+      .footerBottom address {
+        flex: 1;
+      }
+
+      .footerNav {
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .footerNav ul {
+      display: flex;
+      flex-flow: column wrap;
+      max-height: 10rem;
+      align-items: space-between;
+      padding-left: 10%;
+      
+    }
+
+    .footerNav ul li {
+
+    }
+
+    .social {
+      flex: 1;
+      margin: 0 0;
+      align-self: flex-start;
+    }
+
+      
 }

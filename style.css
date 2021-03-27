@@ -149,7 +149,7 @@ img {
 
 button {
   width: 90%;
-  padding: 0.8rem 0;
+  padding: 0.8em 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #3065f8;
@@ -220,7 +220,7 @@ header, section, footer {
 }
 
 #headerLogo {
-  width: 83px;
+  width: 5.2em;
 }
 
 .headerCanvas nav {
@@ -335,8 +335,12 @@ header, section, footer {
   margin-top: 1.5rem;
 }
 
-#intro .sectionCanvas .introText form input {
+#intro .sectionCanvas .introText .emailform {
   width: 90%;
+}
+
+#intro .sectionCanvas .introText form input {
+  width: 100%;
   padding: 0.8rem 0 0.8rem 1.5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -773,10 +777,164 @@ footer a:active {
 
 @media (min-width: 768px) {
   header, main, footer {
-    min-width: 768px;
+    width: 80%;
   }
   .headCanvas, .sectionCanvas {
     width: 95%;
+  }
+  #headerLogo {
+    width: 10.4rem;
+  }
+  .headerCanvas nav {
+    width: 18rem;
+  }
+  .headerCanvas nav ul {
+    font-size: 1rem;
+  }
+  .sectionCanvas {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .introText {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #introIllustration {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #introIllustration img {
+    max-width: 30rem;
+  }
+  .introText h1 {
+    font-size: 1.8rem;
+  }
+  .introText h1, .introText p {
+    text-align: left;
+  }
+  #intro .sectionCanvas .introText form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #intro .sectionCanvas .introText .emailform {
+    margin-right: 1rem;
+  }
+  #intro .sectionCanvas .introText form .emailAlert {
+    padding-left: 1.5rem;
+  }
+  #productiveIllustration {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #productiveIllustration img {
+    max-width: 30rem;
+  }
+  .productiveText {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 50%;
+  }
+  .productiveText h2 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .productiveText > p:last-of-type {
+    text-align: left;
+  }
+  .testiContainer {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5%;
+    max-width: 20rem;
+  }
+  #access .sectionCanvas {
+    margin-top: 3rem;
+  }
+  .accessText h3, .accessText > p {
+    text-align: left;
+  }
+  .accessText h3 {
+    margin-top: 0;
+    width: 80%;
+  }
+  #access .sectionCanvas .accessForm form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .accessForm button {
+    width: 14rem;
+  }
+  .footerBottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerBottom address {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footerNav {
+    margin-top: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footerNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    max-height: 10rem;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    padding-left: 10%;
+  }
+  .social {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */
